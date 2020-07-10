@@ -1,0 +1,29 @@
+
+.MyProfileComponentNameGrid {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.MyProfileComponentProfileImage {
+    width: 80%;
+    /*max-height: 20vh;*/
+}
+
+
+.MyProfileComponentMainGrid {
+    height: 100%;
+}
+
+.MyProfileComponentPaper {
+    width: 100%;
+}
+
+.MyProfileComponentNameDisplay {
+    white-space: pre-wrap;
+}
+
+.MyProfileComponentEmailField, .MyProfileComponentDatePicker {
+    width: 80%;
+}

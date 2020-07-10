@@ -1,0 +1,207 @@
+[
+  {
+    "question": "On a scale of 1 to 10, how healthy do you consider yourself?",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 10,
+      "step": 1,
+      "marks": true
+    }
+  },
+  {
+    "question": "Do you currently suffer from any chronic diseases?",
+    "choiceType": "options",
+    "choices": ["yes", "no"]
+  },
+  {
+    "question": "Do you have any hereditary conditions/diseases?",
+    "choiceType": "options",
+    "choices": [
+      "High blood pressure",
+      "Diabetes",
+      "Hemophilia",
+      "Thalassemia",
+      "Huntington",
+      {
+        "type": "textfield",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "question": "Are you habituated to drugs and alcohol?",
+    "choiceType": "checkboxs",
+    "choices": [
+      "drugs",
+      "alcohol"
+    ],
+    "optionalQuestions" : {
+      "drugs": {
+        "question": "How did you get into drugs?",
+        "choiceType": "textfield"
+      }
+    }
+  },
+  {
+    "question": "How often do you get a health checkup?",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "default": 3,
+      "noRange": true,
+      "marks": true,
+      "textOptions": [
+        "Never get it done",
+        "Only when needed",
+        "Once a year",
+        "Once in 6 months",
+        "Once in 3 months"
+      ]
+    }
+  },
+  {
+    "question": "Overall, how do you rate the local hospitals in your area?",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "default": 3,
+      "noRange": true,
+      "marks": true,
+      "textOptions": [
+        "Very Poor",
+        "Below Average",
+        "Average",
+        "Above Average",
+        "Excellent"
+      ]
+    }
+  },
+  {
+    "question": "How would you evaluate your overall health?",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "default": 3,
+      "noRange": true,
+      "marks": true,
+      "textOptions": [
+        "In good physical health (No illness or disabilities)",
+        "Mildy physically impaired. (Minor illness or disabilities)",
+        "Moderately physically impaired. (Requires substantial treatment)",
+        "Severely physically impaired. (Requires extensive treatment)",
+        "Totally physically impaired. (Confined to bed)"
+      ]
+    }
+  },
+  {
+    "question": "In your opinion, at what capacity can you perform everyday activities?",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "default": 3,
+      "noRange": true,
+      "marks": true,
+      "textOptions": [
+        "Excellent capacity",
+        "Good capacity",
+        "Moderate capacity",
+        "Severely impaired capacity",
+        "Completely impaired capacity"
+      ]
+    }
+  },
+  {
+    "question": "In the past 24 hours, what different kinds of medications have you taken?",
+    "choiceType": "textfield",
+    "textfieldLabel": "medications"
+  },
+  {
+    "question": "How many medications have been prescribed by your physician that you have taken in the last 24 hours?",
+    "choiceType": "options",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6+"
+    ]
+  },
+  {
+    "question": "In the last 24 hours, how did you take your medicine?",
+    "choiceType": "options",
+    "choices": [
+      "Without help (in the right dosage and right time)",
+      "With some help (someone prepares the medicine or reminds you to take it)",
+      "Completely unable to take it",
+      {
+        "type": "textfield",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "question": "Which health insurance coverage provider are you currently enrolled with?",
+    "choiceType": "options",
+    "choices": [
+      "Medicaid",
+      "Medicare",
+      "Affordable Care Act",
+      "Uninsured",
+      "Private health insurance",
+      {
+        "type": "textfield",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "question": "Please state your level of agreement to the statement: Health insurance is affordable to you.",
+    "choiceType": "slider",
+    "sliderConfig": {
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "default": 3,
+      "noRange": true,
+      "marks": true,
+      "textOptions": [
+        "Completely Disagree",
+        "Somewhat Disagree",
+        "Neutral",
+        "Somewhat Agree",
+        "Completely Agree"
+      ]
+    }
+  },
+  {
+    "question": "Has any of your family members been dropped out of coverage after a diagnosis of any illness?",
+    "choiceType": "options",
+    "choices": ["Yes", "No"]
+  },
+  {
+    "question": "Has a lack of health insurance coverage made you consider one of the following?",
+    "choiceType": "checkboxs",
+    "choices": [
+      "Skip a doctor’s appointment",
+      "Cancel an appointment with the doctor",
+      "Postpone a doctors appointment",
+      "Not purchase medicine",
+      "Delay treatment"
+    ]
+  },
+  {
+    "question": "Additional notes?",
+    "choiceType": "textfield"
+  }
+
+]

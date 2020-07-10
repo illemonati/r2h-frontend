@@ -1,0 +1,14 @@
+[
+  {
+    "pageName": "Home",
+    "pageUrl": "/"
+  },
+  {
+    "pageName": "Survey Demo",
+    "pageUrl": "/survey"
+  },
+  {
+    "pageName": "Risk Calculator Demo",
+    "pageUrl": "/risk-calculator"
+  }
+]

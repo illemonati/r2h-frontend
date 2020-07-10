@@ -1,0 +1,14 @@
+[
+    {
+        "buttonText": "My Profile",
+        "linkTo": "/settings/my-profile"
+    },
+    {
+        "buttonText": "Configuration",
+        "linkTo": "/settings/system-configuration"
+    },
+    {
+        "buttonText": "Attributions",
+        "linkTo": "/settings/oss-attributions"
+    }
+]

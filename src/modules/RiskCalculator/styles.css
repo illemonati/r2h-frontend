@@ -1,0 +1,13 @@
+
+
+.GaugeGrid {
+    overflow: hidden;
+}
+
+.displaySwipeDiv {
+    overflow: hidden !important;
+}
+
+.RiskCalculatorResultsGaugesDisplayComponent {
+    overflow: hidden;
+}

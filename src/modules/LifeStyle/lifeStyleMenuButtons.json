@@ -1,0 +1,10 @@
+[
+    {
+        "buttonText": "Take a survey!",
+        "linkTo": "/survey"
+    },
+    {
+        "buttonText": "resources",
+        "linkTo": "/lifestyle/resources"
+    }
+]

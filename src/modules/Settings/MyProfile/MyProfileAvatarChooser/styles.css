@@ -1,0 +1,9 @@
+
+
+.MyProfileAvatarChooserComponentCheckIcon {
+    color: gray !important;
+}
+
+.MyProfileAvatarChooserComponentCheckIconChecked {
+    color: forestgreen !important;
+}

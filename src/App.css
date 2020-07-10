@@ -1,0 +1,21 @@
+.App {
+    text-align: center;
+    display: flex !important;
+    flex-flow: column !important;
+}
+
+.AppMainComponent {
+    padding-top: 5vh;
+    flex-grow: 1;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

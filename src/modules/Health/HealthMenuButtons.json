@@ -1,0 +1,14 @@
+[
+    {
+        "buttonText": "Symptom Assessment",
+        "linkTo": "/risk-calculator"
+    },
+    {
+        "buttonText": "... Near Me",
+        "linkTo": "/health/near-me"
+    },
+    {
+        "buttonText": "Diseases Search (beta)",
+        "linkTo": "/health/diseases-search"
+    }
+]

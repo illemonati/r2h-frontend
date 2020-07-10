@@ -1,0 +1,217 @@
+[
+  {
+    "fieldNumber":0,
+    "fieldName":"Age (yrs)",
+    "inputType":"number",
+    "fieldConfig":{
+      "default":60
+
+    }
+
+  },
+  {
+    "fieldNumber":1,
+    "fieldName":"ASA Class",
+    "inputType":"dropdown",
+    "fieldConfig":{
+      "default":0,
+      "options":[
+        "I: A normal healthy patient",
+        "II: A patient with mild systemic disease",
+        "III: A patient with severe systemic disease",
+        "IV: A patient with severe systemic disease that is a constant threat to life",
+        "Unknown"
+
+      ]
+
+    }
+
+  },
+  {
+    "fieldNumber":2,
+    "fieldName":"Dypsnea",
+    "inputType":"dropdown",
+    "fieldConfig":{
+      "default":0,
+      "options":[
+        "None",
+        "With Moderate Exertion",
+        "At Rest"
+
+      ]
+
+    }
+
+  },
+  {
+    "fieldNumber":3,
+    "fieldName":"Cerebrovascular accident with neurological deficit",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":4,
+    "fieldName":"Cerebrovascular Disease",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":5,
+    "fieldName":"History of mycoardial infarction (in past 6 months)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":6,
+    "fieldName":"Pain Medication Use",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":7,
+    "fieldName":"Chemotherapy for malignancy within 30 days pre-op",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":8,
+    "fieldName":"Rest pain/gangrene within 30 days pre-op",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":9,
+    "fieldName":"Previous percutaneous transluminal coronary artery angioplasty (PTCA) or percutaneous coronary intervention (PCI)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":10,
+    "fieldName":"Previous percutaneous transluminal coronary artery angioplasty (PTCA) or percutaneous coronary intervention (PCI)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":11,
+    "fieldName":"Hemiplegia that has not been treated or patient has not recovered from (also if associated with CVA/Stroke)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":12,
+    "fieldName":"Open Wound (with or without infection)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":13,
+    "fieldName":"Dementia Diagnosis",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":14,
+    "fieldName":"Any Ulcer",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber":15,
+    "fieldName":"Any Malignancy",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+
+  },
+  {
+    "fieldNumber": 16,
+    "fieldName": "History of Angina (in past 30 days)",
+    "inputType": "checkbox",
+    "fieldConfig": {
+      "default": false
+    }
+  },
+  {
+    "fieldNumber":17,
+    "fieldName":"History of revascularization/amputation of periph. vasuclar dissease (PVD)",
+    "inputType":"checkbox",
+    "fieldConfig":{
+      "default":false
+
+    }
+  },
+  {
+    "fieldNumber": 18,
+    "fieldName": "Pre-operative BUN (mg/dl)",
+    "inputType": "number",
+    "fieldConfig": {
+      "default": 10
+    }
+  },
+  {
+    "fieldNumber": 19,
+    "fieldName": "Pre-operative serum albumin (g/dl)",
+    "inputType": "number",
+    "fieldConfig": {
+      "default": 4.5
+    }
+  },
+  {
+    "fieldNumber": 20,
+    "fieldName": "Pre-operative partial thromboplastin time (s)",
+    "inputType": "number",
+    "fieldConfig": {
+      "default": 30
+    }
+  }
+]

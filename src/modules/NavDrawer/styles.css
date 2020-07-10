@@ -1,0 +1,20 @@
+
+.pageLink {
+    text-decoration: none;
+}
+
+
+.drawerBox {
+    width: 300px;
+    text-align: center;
+}
+
+
+
+.appBarTitle {
+    text-align: center !important;
+}
+
+.mainAppBar {
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+
+.MapComponentMainMap {
+    height: 100%;
+    width: 100%;
+}
+
+.MapComponent {
+    width: 100%;
+    position: absolute;
+}
+
+
+.FreeClinicsMapComponentClinicImage {
+    width: 100%;
+    height: auto;
+}

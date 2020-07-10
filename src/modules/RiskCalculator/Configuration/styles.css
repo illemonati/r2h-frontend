@@ -1,0 +1,15 @@
+.RiskCalculatorConfigComponent {
+    /*overflow-x: hidden;*/
+    text-align: left;
+}
+
+.fieldsList {
+    height: inherit !important;
+    overflow-x: hidden !important;
+}
+
+
+
+.fieldsListContainer {
+    height: 100% !important;
+}
