@@ -2,8 +2,12 @@ import * as React from "react";
 import { lazy, Suspense } from "react";
 import riskCalculatorConfigs from "./configs/riskCalculatorConfig.json";
 import questions from "./configs/questions.json";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import pageLinks from "./configs/links.json";
+
+const NotFoundComponent = lazy(() =>
+    import("./modules/NotFound/NotFoundComponent")
+);
 
 const LifeStyleComponent = lazy(() =>
     import("./modules/LifeStyle/LifeStyleComponent")
@@ -110,6 +114,12 @@ export default function RouterComponent() {
                 <Route path="/" exact>
                     <HomePageComponent pageLinks={pageLinks} />
                 </Route>
+
+                {/* 404 */}
+                <Route path="/404" exact>
+                    <NotFoundComponent />
+                </Route>
+                <Redirect to="/404" />
             </Switch>
         </Suspense>
     );
