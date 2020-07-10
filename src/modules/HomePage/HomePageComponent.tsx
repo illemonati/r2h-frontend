@@ -1,23 +1,20 @@
 import React from "react";
-import {Box, Container, Typography} from "@material-ui/core";
-import {PageLinks} from "../../utils/links";
-import logoPng from '../../static-assets/ASHA_logo_2.png';
-import './styles.css';
+import { Box, Container, Typography } from "@material-ui/core";
+import { PageLinks } from "../../utils/links";
+import logoPng from "../../static-assets/ASHA_logo_2.png";
+import "./styles.css";
 import HealthRecommendationComponent from "./HealthRecommandation/HealthRecommendationComponent";
 
 interface HomePageComponentProps {
-    pageLinks?: PageLinks
+    pageLinks?: PageLinks;
 }
-
 
 export default function HomePageComponent(props: HomePageComponentProps) {
     return (
         <div className="homepage">
             <Container maxWidth="md">
                 <Box margin="auto" justifyContent="center">
-                    <Typography variant="h3">
-                        Advocating for Self Health Awareness
-                    </Typography>
+                    <Typography variant="h3">Resource 2 Health</Typography>
                     <br />
                     <br />
 
@@ -37,7 +34,5 @@ export default function HomePageComponent(props: HomePageComponentProps) {
                 </Box>
             </Container>
         </div>
-    )
+    );
 }
-
-

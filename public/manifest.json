@@ -1,10 +1,10 @@
 {
-    "name": "Advocating For Self Health Awareness",
-    "short_name": "ASHA",
-    "description": "Advocating For Self Health Awareness",
+    "name": "Resource2Health",
+    "short_name": "R2H",
+    "description": "Resource2Health",
     "lang": "en",
-    "start_url": "/asha-health/",
-    "scope": "/asha-health/",
+    "start_url": "/",
+    "scope": "/",
     "display": "fullscreen",
     "theme_color": "#3F51B5",
     "icons": [
