@@ -10,5 +10,9 @@
     {
         "buttonText": "Diseases Search (beta)",
         "linkTo": "/health/diseases-search"
+    },
+    {
+        "buttonText": "Covid-19 Stats",
+        "linkTo": "/health/covid-stats"
     }
 ]

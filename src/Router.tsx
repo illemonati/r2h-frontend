@@ -9,6 +9,10 @@ const NotFoundComponent = lazy(() =>
     import("./modules/NotFound/NotFoundComponent")
 );
 
+const CovidStatsComponent = lazy(() =>
+    import("./modules/Health/CovidStats/CovidStatsComponent")
+);
+
 const LifeStyleComponent = lazy(() =>
     import("./modules/LifeStyle/LifeStyleComponent")
 );
@@ -85,6 +89,9 @@ export default function RouterComponent() {
                 </Route>
                 <Route path="/health/near-me" exact>
                     <NearMeComponent />
+                </Route>
+                <Route path="/health/covid-stats" exact>
+                    <CovidStatsComponent />
                 </Route>
 
                 {/* Settings Routes */}
