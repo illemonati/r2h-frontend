@@ -92,6 +92,8 @@ const CovidStatsComponent: React.FC = () => {
     const [deathTableOrderBy, setDeathTableOrderBy] = useState("date");
     const [deathTableOrder, setDeathTableOrder] = React.useState<Order>("desc");
     const [chartTab, setChartTab] = useState(0);
+    const [chartSubTab, setChartSubTab] = useState(0);
+    const [chartTotalTab, setChartTotalTab] = useState(0);
     useEffect(() => {
         (async () => {
             try {
@@ -131,12 +133,22 @@ const CovidStatsComponent: React.FC = () => {
         event: React.ChangeEvent<{}>,
         newValue: number
     ) => {
-        // console.log(covidInfos);
         setChartTab((value) => newValue);
+        setChartTotalTab(newValue * 2 + chartSubTab);
+    };
+
+    const handleChartSubTabChange = (
+        event: React.ChangeEvent<{}>,
+        newValue: number
+    ) => {
+        setChartSubTab((value) => newValue);
+        setChartTotalTab(chartTab * 2 + newValue);
     };
 
     const handleChartSwipe = (index: number) => {
-        setChartTab(index);
+        setChartTab(index / 2);
+        setChartSubTab(index % 2);
+        setChartTotalTab(index);
     };
 
     const createTableTitleCell = (title: string, field: string) => {
@@ -175,22 +187,43 @@ const CovidStatsComponent: React.FC = () => {
                         textColor={"primary"}
                     >
                         <Tab label="Positives" value={0} />
-                        <Tab label="Deaths" value={1} />
-                        <Tab label="Hospitalized Increase" value={2} />
-                        <Tab label="Death Increase" value={3} />
+                        <Tab label="Hospitalized" value={1} />
+                        <Tab label="Deaths" value={2} />
+                    </Tabs>
+                </Paper>
+                <br />
+
+                <Paper square>
+                    <Tabs
+                        value={chartSubTab}
+                        onChange={handleChartSubTabChange}
+                        className="toggleTabs"
+                        centered={true}
+                        textColor={"primary"}
+                    >
+                        <Tab label="Total Amount" value={0} />
+                        <Tab label="Rate Increase" value={1} />
                     </Tabs>
                 </Paper>
                 <br />
                 <br />
                 <Paper>
                     <SwipeableViews
-                        index={chartTab}
+                        index={chartTotalTab}
                         onChangeIndex={handleChartSwipe}
                     >
                         <SerisToChart data={covidInfos}>
                             <LineSeries
                                 valueField="positive"
                                 argumentField="dateTimeStamp"
+                            />
+                        </SerisToChart>
+
+                        <SerisToChart data={covidInfos}>
+                            <LineSeries
+                                valueField="hospitalized"
+                                argumentField="dateTimeStamp"
+                                color="orange"
                             />
                         </SerisToChart>
 
@@ -204,9 +237,17 @@ const CovidStatsComponent: React.FC = () => {
 
                         <SerisToChart data={covidInfos}>
                             <LineSeries
-                                valueField="hospitalizedIncrease"
+                                valueField="positiveIncrease"
                                 argumentField="dateTimeStamp"
                                 color="green"
+                            />
+                        </SerisToChart>
+
+                        <SerisToChart data={covidInfos}>
+                            <LineSeries
+                                valueField="hospitalizedIncrease"
+                                argumentField="dateTimeStamp"
+                                color="violet"
                             />
                         </SerisToChart>
 
@@ -227,18 +268,26 @@ const CovidStatsComponent: React.FC = () => {
                             <TableHead>
                                 <TableRow>
                                     {createTableTitleCell("Date", "date")}
-                                    {createTableTitleCell("Death", "death")}
                                     {createTableTitleCell(
                                         "Positives",
                                         "positive"
                                     )}
                                     {createTableTitleCell(
-                                        "Death Increase",
-                                        "deathIncrease"
+                                        "Hospitalized",
+                                        "hospitalized"
                                     )}
+                                    {createTableTitleCell("Death", "death")}
                                     {createTableTitleCell(
                                         "Positives Increase",
                                         "positiveIncrease"
+                                    )}
+                                    {createTableTitleCell(
+                                        "Hospitalized Increase",
+                                        "hospitalizedIncrease"
+                                    )}
+                                    {createTableTitleCell(
+                                        "Death Increase",
+                                        "deathIncrease"
                                     )}
                                 </TableRow>
                             </TableHead>
@@ -255,21 +304,27 @@ const CovidStatsComponent: React.FC = () => {
                                             <TableCell
                                                 component="th"
                                                 scope="row"
+                                                align="left"
                                             >
                                                 {formatDate(info.date)}
                                             </TableCell>
-                                            <TableCell align="right">
-                                                {info.death || 0}
-                                            </TableCell>
-                                            <TableCell align="right">
-                                                {info.positive || 0}
-                                            </TableCell>
-                                            <TableCell align="right">
-                                                {info.deathIncrease || 0}
-                                            </TableCell>
-                                            <TableCell align="right">
-                                                {info.hospitalizedIncrease || 0}
-                                            </TableCell>
+                                            {[
+                                                "positive",
+                                                "hospitalized",
+                                                "death",
+                                                "positiveIncrease",
+                                                "hospitalizedIncrease",
+                                                "deathIncrease",
+                                            ].map((name) => {
+                                                return (
+                                                    <TableCell
+                                                        align="right"
+                                                        key={`${i}${name}`}
+                                                    >
+                                                        {info[name] || 0}
+                                                    </TableCell>
+                                                );
+                                            })}
                                         </TableRow>
                                     );
                                 })}
