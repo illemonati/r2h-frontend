@@ -278,15 +278,15 @@ const CovidStatsComponent: React.FC = () => {
                                     )}
                                     {createTableTitleCell("Death", "death")}
                                     {createTableTitleCell(
-                                        "Positives Increase",
+                                        "Positives (I)",
                                         "positiveIncrease"
                                     )}
                                     {createTableTitleCell(
-                                        "Hospitalized Increase",
+                                        "Hospitalized (I)",
                                         "hospitalizedIncrease"
                                     )}
                                     {createTableTitleCell(
-                                        "Death Increase",
+                                        "Death (I)",
                                         "deathIncrease"
                                     )}
                                 </TableRow>
