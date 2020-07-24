@@ -2,6 +2,7 @@ export type CovidInfos = CovidInfo[];
 
 export interface CovidInfo {
     date: number;
+    dateTimeStamp: number;
     states: number;
     positive: number;
     negative: number;
@@ -26,4 +27,5 @@ export interface CovidInfo {
     positiveIncrease: number;
     totalTestResultsIncrease: number;
     hash: string;
+    [key: string]: any;
 }
