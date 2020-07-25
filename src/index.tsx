@@ -10,6 +10,8 @@ import { persistStore, persistReducer } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import { swNewUpdate } from "./actions/SWUpdate";
 import localForage from "localforage";
+import "react-app-polyfill/ie9";
+import "react-app-polyfill/stable";
 
 localForage.config({
     name: "resource2health",
