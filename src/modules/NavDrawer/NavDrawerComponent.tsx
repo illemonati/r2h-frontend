@@ -30,7 +30,7 @@ export default function NavDrawerComponent(props?: NavDrawerComponentProps) {
                     {/*    <MenuIcon/>*/}
                     {/*</IconButton>*/}
                     <Typography variant="h6" className="appBarTitle">
-                        Resouce2Health
+                        Resource2Health
                     </Typography>
                 </Toolbar>
             </AppBar>
