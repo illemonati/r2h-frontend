@@ -23,7 +23,7 @@ const WebCamComponent = (props: WebCamProps) => {
     // console.log(webcamRef.current);
 
     const videoConstraints = {
-        facingMode: "user"
+        // facingMode: "user"
     };
 
     useEffect(() => {
@@ -115,7 +115,8 @@ const WebCamComponent = (props: WebCamProps) => {
                 width={1280}
                 id="streamVideo"
                 onUserMedia={onUserMedia}
-                videoConstraints={videoConstraints}
+                imageSmoothing={false}
+                // videoConstraints={videoConstraints}
             />
             <canvas ref={canvasRef} width={1280} height={800} className="boxOverlayCanvas"></canvas>
         </div>

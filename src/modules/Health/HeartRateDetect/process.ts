@@ -152,6 +152,7 @@ export const processHeartRate = (foreheadImageData: Uint8ClampedArray, setBuffer
                 // console.log(mostLikelyIndex);
                 // const bpm = freqsPurned[mostLikelyIndex];
                 const bpm = freqs[mostLikelyIndexInSpectrum];
+                if (bpm < 60 && bpm > 120) continue;
                 // console.log(bpm)
                 bpms.push(bpm);
             }
