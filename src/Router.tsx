@@ -55,6 +55,10 @@ const DiseasesSearchComponent = lazy(() =>
     import("./modules/Health/DiseasesSearch/DiseasesSearchComponent")
 );
 
+const HeartRateDetectComponent = lazy(() =>
+    import("./modules/Health/HeartRateDetect/HeartRateDetectComponent")
+)
+
 export default function RouterComponent() {
     return (
         <Suspense fallback={<></>}>
@@ -92,6 +96,9 @@ export default function RouterComponent() {
                 </Route>
                 <Route path="/health/covid-stats" exact>
                     <CovidStatsComponent />
+                </Route>
+                <Route path="/health/heart-rate-detect" exact>
+                    <HeartRateDetectComponent />
                 </Route>
 
                 {/* Settings Routes */}

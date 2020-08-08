@@ -1,0 +1,24 @@
+.boxOverlayCanvas {
+    width: 1280px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.WebcamComponent {
+    position: relative;
+    height: 800px;
+}
+
+#streamVideo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*display: none;*/
+}
+
+
+

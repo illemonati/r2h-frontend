@@ -14,5 +14,9 @@
     {
         "buttonText": "Covid-19 Stats",
         "linkTo": "/health/covid-stats"
+    },
+    {
+        "buttonText": "Heart Rate",
+        "linkTo": "/health/heart-rate-detect"
     }
 ]
