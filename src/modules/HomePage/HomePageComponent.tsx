@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography } from "@material-ui/core";
 import { PageLinks } from "../../utils/links";
-import logoPng from "../../static-assets/ASHA_logo_2.png";
+import logoPng from "../../static-assets/r2h.png";
 import "./styles.css";
 import HealthRecommendationComponent from "./HealthRecommandation/HealthRecommendationComponent";
 
