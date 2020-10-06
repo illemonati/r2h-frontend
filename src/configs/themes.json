@@ -1,0 +1,30 @@
+{
+    "default": {
+        "dark": {
+            "primary": "#87ceeb",
+            "secondary": "#fd9395",
+            "background": "#212121",
+            "paper": "#333333"
+        },
+        "light": {
+            "primary": "#0d7aa6",
+            "secondary": "#fd9395",
+            "background": "#f0f0f0",
+            "paper": "#e0e0e0"
+        }
+    },
+    "solarized": {
+        "dark": {
+            "primary": "#268bd2",
+            "secondary": "#d33682",
+            "background": "#002b36",
+            "paper": "#073642"
+        },
+        "light": {
+            "primary": "#268bd2",
+            "secondary": "#d33682",
+            "background": "#eee8d5",
+            "paper": "#fdf6e3"
+        }
+    }
+}

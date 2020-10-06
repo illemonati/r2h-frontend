@@ -1,8 +1,8 @@
-import React from 'react';
-import { Button, Grid } from '@material-ui/core';
-import { MenuButtons } from './MenuButtonsConfigFormat';
-import './styles.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Button, Grid } from "@material-ui/core";
+import { MenuButtons } from "./MenuButtonsConfigFormat";
+import "./styles.css";
+import { Link } from "react-router-dom";
 
 interface MenuButtonsComponentProps {
     menuButtons: MenuButtons;
@@ -15,7 +15,7 @@ export default function MenuButtonsComponent(props: MenuButtonsComponentProps) {
                 const startIcon = (
                     <img
                         src={menuButton.buttonIconUrl}
-                        alt={'startIconFor' + menuButton.buttonText}
+                        alt={"startIconFor" + menuButton.buttonText}
                         className="MenuButtonComponentStartIcon"
                     />
                 );
@@ -23,7 +23,7 @@ export default function MenuButtonsComponent(props: MenuButtonsComponentProps) {
                     <Grid item xs={12} key={i}>
                         <Button
                             variant="outlined"
-                            color="primary"
+                            color="secondary"
                             className="MenuButtonComponentButtons"
                             component={Link}
                             to={menuButton.linkTo}

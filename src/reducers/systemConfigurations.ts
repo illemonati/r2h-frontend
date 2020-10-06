@@ -1,18 +1,16 @@
-import SystemConfigurations, {SystemFont} from './../utils/SystemConfigurations';
-
-const defaultConfig = {
-    darkMode: true,
-    systemFont: SystemFont.ComicNeue,
-};
+import SystemConfigurations, {
+    defaultSystemConfigurations,
+    SystemFont,
+    ThemeOption,
+} from "./../utils/SystemConfigurations";
 
 export default function systemConfigurationsReducer(
-    state = defaultConfig,
+    state = defaultSystemConfigurations,
     action: any
 ): SystemConfigurations {
-
     switch (action.type) {
-        case 'UPDATE_SYSTEM_CONFIGURATIONS':
-            return {...defaultConfig, ...action.payload};
+        case "UPDATE_SYSTEM_CONFIGURATIONS":
+            return { ...defaultSystemConfigurations, ...action.payload };
         default:
             return state;
     }
