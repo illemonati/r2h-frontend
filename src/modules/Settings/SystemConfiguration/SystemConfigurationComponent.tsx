@@ -133,7 +133,7 @@ export default function SystemConfigurationComponent() {
                             <Grid item xs={4}>
                                 <Select
                                     value={
-                                        systemConfigurations.theme.theme ||
+                                        systemConfigurations?.theme?.theme ||
                                         ThemeOption.default
                                     }
                                     onChange={handleThemeChange}
@@ -152,17 +152,17 @@ export default function SystemConfigurationComponent() {
                                 </Select>
                             </Grid>
 
-                            {systemConfigurations.theme.theme ===
+                            {systemConfigurations?.theme?.theme ===
                                 ThemeOption.custom &&
                                 Object.keys(
                                     defaultSystemConfigurations.theme
                                         .themeOverides
                                 ).map((key, i) => {
                                     const value =
-                                        (systemConfigurations.theme
+                                        (systemConfigurations?.theme
                                             ?.themeOverides as any)[key] ||
-                                        (defaultSystemConfigurations.theme
-                                            .themeOverides as any)[key];
+                                        (defaultSystemConfigurations?.theme
+                                            ?.themeOverides as any)[key];
                                     return (
                                         <Fragment key={i}>
                                             <Grid item xs={8}>
