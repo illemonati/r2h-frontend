@@ -33,7 +33,7 @@ function App() {
 
     let theme = null;
 
-    if (systemConfigurations.theme.theme == ThemeOption.custom) {
+    if (systemConfigurations?.theme?.theme == ThemeOption.custom) {
         const themeOption = ThemeOption.default;
         const defaultThemeOptionValues =
             themes[themeOption][
@@ -67,7 +67,7 @@ function App() {
         });
     } else {
         const themeOption =
-            systemConfigurations.theme.theme || ThemeOption.default;
+            systemConfigurations?.theme?.theme || ThemeOption.default;
         const themeOptionValues =
             themes[themeOption][
                 systemConfigurations.darkMode ? "dark" : "light"
