@@ -33,7 +33,7 @@ function App() {
 
     let theme = null;
 
-    if (systemConfigurations?.theme?.theme == ThemeOption.custom) {
+    if (systemConfigurations?.theme?.theme === ThemeOption.custom) {
         const themeOption = ThemeOption.default;
         const defaultThemeOptionValues =
             themes[themeOption][
@@ -92,6 +92,9 @@ function App() {
             },
         });
     }
+
+    const metaThemeColor = document.querySelector("meta[name=theme-color]")!;
+    metaThemeColor.setAttribute("content", theme.palette.primary.main);
 
     initFirebase(firebaseConfig);
     return (
