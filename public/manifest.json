@@ -6,12 +6,20 @@
     "start_url": "/",
     "scope": "/",
     "display": "fullscreen",
-    "theme_color": "#3F51B5",
+    "theme_color": "#268bd2",
     "icons": [
         {
             "src": "./logo.png",
             "sizes": "512x512",
             "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Covid Stats",
+            "short_name": "Covid Stats",
+            "description": "View the current covid 19 statistics",
+            "url": "/health/covid-stats"
         }
     ]
 }
