@@ -39,7 +39,8 @@ const SerisToChart: React.FC<SerisToChartProps> = (props) => {
         <Chart data={props.data}>
             <ArgumentAxis
                 tickFormat={(scale) => (tick) => {
-                    return moment(tick, "X").format("MMM Do YYYY");
+                    // return moment(tick, "X").format("MMM Do YYYY");
+                    return moment(tick, "X").format("MM/DD/YY");
                 }}
             />
             <ValueAxis />
