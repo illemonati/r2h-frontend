@@ -13,6 +13,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import { swNewUpdate } from "./actions/SWUpdate";
 import localForage from "localforage";
+import createCompressor from "redux-persist-transform-compress";
 
 localForage.config({
     name: "resource2health",
@@ -20,9 +21,12 @@ localForage.config({
     description: "storage for the resource2health",
 });
 
+const compressor = createCompressor({});
+
 const persistConfig = {
     key: "root",
     storage: localForage,
+    transforms: [compressor],
     // blacklist: ['waitingSW']
 };
 

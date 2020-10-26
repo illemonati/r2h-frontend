@@ -2913,6 +2913,13 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/redux-persist-transform-compress@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@types/redux-persist-transform-compress/-/redux-persist-transform-compress-4.2.0.tgz#728cbe4312f9c8dea4ed0cd64e668591b6aa6151"
+  integrity sha1-coy+QxL5yN6k7QzWTmaFkbaqYVE=
+  dependencies:
+    redux-persist-transform-compress "*"
+
 "@types/redux@^3.6.0":
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@types/redux/-/redux-3.6.0.tgz#f1ebe1e5411518072e4fdfca5c76e16e74c1399a"
@@ -8230,7 +8237,7 @@ json-stable-stringify@^1.0.1:
   dependencies:
     jsonify "~0.0.0"
 
-json-stringify-safe@~5.0.1:
+json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
@@ -8659,6 +8666,11 @@ lru-cache@^5.1.1:
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
   dependencies:
     yallist "^3.0.2"
+
+lz-string@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
+  integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
@@ -11200,6 +11212,14 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-persist-transform-compress@*, redux-persist-transform-compress@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux-persist-transform-compress/-/redux-persist-transform-compress-4.2.0.tgz#5089e299df7130878fca45f97ffe82888ba02690"
+  integrity sha1-UInimd9xMIePykX5f/6CiIugJpA=
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lz-string "^1.4.4"
 
 redux-persist@^6.0.0:
   version "6.0.0"
