@@ -219,23 +219,6 @@ const CovidStatsComponent: React.FC = () => {
                                 argumentField="dateTimeStamp"
                             />
                         </SerisToChart>
-
-                        <SerisToChart data={covidInfos}>
-                            <LineSeries
-                                valueField="hospitalized"
-                                argumentField="dateTimeStamp"
-                                color="orange"
-                            />
-                        </SerisToChart>
-
-                        <SerisToChart data={covidInfos}>
-                            <LineSeries
-                                valueField="death"
-                                argumentField="dateTimeStamp"
-                                color="red"
-                            />
-                        </SerisToChart>
-
                         <SerisToChart data={covidInfos}>
                             <LineSeries
                                 valueField="positiveIncrease"
@@ -246,12 +229,26 @@ const CovidStatsComponent: React.FC = () => {
 
                         <SerisToChart data={covidInfos}>
                             <LineSeries
+                                valueField="hospitalized"
+                                argumentField="dateTimeStamp"
+                                color="orange"
+                            />
+                        </SerisToChart>
+                        <SerisToChart data={covidInfos}>
+                            <LineSeries
                                 valueField="hospitalizedIncrease"
                                 argumentField="dateTimeStamp"
                                 color="violet"
                             />
                         </SerisToChart>
 
+                        <SerisToChart data={covidInfos}>
+                            <LineSeries
+                                valueField="death"
+                                argumentField="dateTimeStamp"
+                                color="red"
+                            />
+                        </SerisToChart>
                         <SerisToChart data={covidInfos}>
                             <LineSeries
                                 valueField="deathIncrease"
