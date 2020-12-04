@@ -1,0 +1,62 @@
+[
+    {
+        "question": "How have you been feeling in general?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 5,
+            "step": 1,
+            "default": 3,
+            "noRange": true,
+            "marks": true,
+            "textOptions": [
+                "In an excellent frame of mind",
+                "In a very good mood",
+                "In a good mood mostly",
+                "My mood has been up and down",
+                "In a poor frame of mind mostly",
+                "In a very poor frame of mind"
+            ]
+        }
+    },
+    {
+        "question": "Have you been bothered by nervousness?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 5,
+            "step": 1,
+            "default": 3,
+            "noRange": true,
+            "marks": true,
+            "textOptions": [
+                "Not at all",
+                "A little",
+                "Some – enough to bother me",
+                "Yes – quite a bit",
+                "Yes – very much so",
+                "Extremely so – to the point where I could not work or take care of things"
+            ]
+        }
+    },
+    {
+        "question": "Have you been in firm control of your behavior, thoughts, emotions, and feelings?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 5,
+            "step": 1,
+            "default": 3,
+            "noRange": true,
+            "marks": true,
+            "textOptions": [
+                "Yes, definitely so",
+                "A little",
+                "Some – enough to bother me",
+                "Yes – quite a bit",
+                "Yes – very much so",
+                "Extremely so – to the point where I could not work or take care of things"
+            ]
+        }
+    }
+]

@@ -1,0 +1,386 @@
+[
+    {
+        "question": "Do you have a full day off to do what you like?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 4,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Weekly",
+                "Mostly",
+                "Frequently",
+                "Occasionally",
+                "Never"
+            ],
+            "default": 2
+        }
+    },
+    {
+        "question": "Do you have time out for yourself to think, reflect, meditate and pray?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Weekly",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you have good vacations, about 3-4 weeks in each year?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Every year",
+                "Some years",
+                "Occasionally",
+                "Never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you do some aerobic exercise for at least half an dhour at a time",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "three to five times a week",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you do something for fun or enjoyment Eg. Game, movie, concert?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["Weekly", "Monthly", "Occasionally", "Never"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you practice any muscle relaxation or slow breathing technique?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Daily",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you listen to your body messages (symptoms, illnesses, etc)?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Always",
+                "Mostly",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "IF SINGLE: Do you have friends with whom you can share at a feelings level?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Regularly",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "IF MARRIED (or in relationship): how often do you share intimately?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Daily",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you share your stressors [cares, problems, struggles, needs] with others & God?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Regularly",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "How would you describe your ability to communicate with others?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["Excellent", "Fair", "Difficult", "Poor"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you sleep well (8-9 hours per night)?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 2,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["Frequently", "Occasionally", "Seldom or never"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Are you able to say NO! to inappropriate or excessive demands on you?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Always",
+                "Mostly",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you set realistic goals for your life, both long and short term?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Regularly",
+                "Frequently",
+                "Occasionally",
+                "Seldom or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Are you careful to eat a good balanced diet?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Always",
+                "Mostly",
+                "Not often",
+                "A lot of junk food"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Is your weight appropriate for your height?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 2,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Consistently",
+                "A battle to keep it down",
+                "Overweight"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "How would you describe the amount of touch you get in your life?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Plenty",
+                "Just enough",
+                "I miss out",
+                "I am rarely touched"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Can you deal with anger without repressing or dumping it on others?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 4,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Always",
+                "Mostly",
+                "Occasionally",
+                "Rarely",
+                "Never"
+            ],
+            "default": 2
+        }
+    },
+    {
+        "question": "Do you have a good \"belly laugh\"?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["At least daily", "Frequently", "Seldom", "Never"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you have a creative hobby time (Eg. gardening, reading, music)?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["Weekly", "Occasionally", "Rarely", "Never"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you nurture your self-esteem (Eg. with self affirmations)?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "Regularly",
+                "Frequently",
+                "Occasionally",
+                "Rarely or never"
+            ],
+            "default": 1
+        }
+    },
+    {
+        "question": "Do you practice forgiveness of others who have hurt you?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 3,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": ["Regularly", "Occasionally", "Rarely", "Never"],
+            "default": 1
+        }
+    },
+    {
+        "question": "Have you dealt with old hurts and baggage from the past?",
+        "choiceType": "slider",
+        "sliderConfig": {
+            "start": 0,
+            "end": 2,
+            "noRange": true,
+            "marks": true,
+            "step": 1,
+            "textOptions": [
+                "All that you are aware of",
+                "Most of it",
+                "A lot left yet"
+            ],
+            "default": 1
+        }
+    }
+]

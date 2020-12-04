@@ -4,60 +4,68 @@ import riskCalculatorConfigs from "./configs/riskCalculatorConfig.json";
 import questions from "./configs/questions.json";
 import { Switch, Route, Redirect } from "react-router-dom";
 import pageLinks from "./configs/links.json";
+import burnoutQuestions from "./configs/burnout-prevention.processed.json";
+import { SliderQuestion } from "./modules/Survey/QuestionsFormat";
 
-const NotFoundComponent = lazy(() =>
-    import("./modules/NotFound/NotFoundComponent")
+console.log(burnoutQuestions);
+
+const NotFoundComponent = lazy(
+    () => import("./modules/NotFound/NotFoundComponent")
 );
 
-const CovidStatsComponent = lazy(() =>
-    import("./modules/Health/CovidStats/CovidStatsComponent")
+const CovidStatsComponent = lazy(
+    () => import("./modules/Health/CovidStats/CovidStatsComponent")
 );
 
-const LifeStyleComponent = lazy(() =>
-    import("./modules/LifeStyle/LifeStyleComponent")
+const LifeStyleComponent = lazy(
+    () => import("./modules/LifeStyle/LifeStyleComponent")
 );
 const HealthComponent = lazy(() => import("./modules/Health/HealthComponent"));
-const SettingsComponent = lazy(() =>
-    import("./modules/Settings/SettingsComponent")
+const SettingsComponent = lazy(
+    () => import("./modules/Settings/SettingsComponent")
 );
-const LifeStyleResourcesComponent = lazy(() =>
-    import("./modules/LifeStyle/LifeStyleResources/LifeStyleResourcesComponent")
+const LifeStyleResourcesComponent = lazy(
+    () =>
+        import(
+            "./modules/LifeStyle/LifeStyleResources/LifeStyleResourcesComponent"
+        )
 );
-const NearMeComponent = lazy(() =>
-    import("./modules/Health/NearMe/NearMeComponent")
+const NearMeComponent = lazy(
+    () => import("./modules/Health/NearMe/NearMeComponent")
 );
-const RiskCalculatorComponent = lazy(() =>
-    import("./modules/RiskCalculator/RiskCalculatorComponent")
+const RiskCalculatorComponent = lazy(
+    () => import("./modules/RiskCalculator/RiskCalculatorComponent")
 );
-const HomePageComponent = lazy(() =>
-    import("./modules/HomePage/HomePageComponent")
+const HomePageComponent = lazy(
+    () => import("./modules/HomePage/HomePageComponent")
 );
 const SurveyComponent = lazy(() => import("./modules/Survey/SurveyComponent"));
-const MyProfileComponent = lazy(() =>
-    import("./modules/Settings/MyProfile/MyProfileComponent")
+const MyProfileComponent = lazy(
+    () => import("./modules/Settings/MyProfile/MyProfileComponent")
 );
 const MapComponent = lazy(() => import("./modules/Map/MapComponent"));
-const FoodBanksMapComponent = lazy(() =>
-    import("./modules/Map/SpecificMaps/FoodBanksComponent")
+const FoodBanksMapComponent = lazy(
+    () => import("./modules/Map/SpecificMaps/FoodBanksComponent")
 );
-const FreeClinicsMapComponent = lazy(() =>
-    import("./modules/Map/SpecificMaps/FreeClinicsComponent")
+const FreeClinicsMapComponent = lazy(
+    () => import("./modules/Map/SpecificMaps/FreeClinicsComponent")
 );
-const SystemConfigurationComponent = lazy(() =>
-    import(
-        "./modules/Settings/SystemConfiguration/SystemConfigurationComponent"
-    )
+const SystemConfigurationComponent = lazy(
+    () =>
+        import(
+            "./modules/Settings/SystemConfiguration/SystemConfigurationComponent"
+        )
 );
-const OssAttributionsComponent = lazy(() =>
-    import("./modules/Settings/OssAttributions/OssAttributionsComponent")
+const OssAttributionsComponent = lazy(
+    () => import("./modules/Settings/OssAttributions/OssAttributionsComponent")
 );
-const DiseasesSearchComponent = lazy(() =>
-    import("./modules/Health/DiseasesSearch/DiseasesSearchComponent")
+const DiseasesSearchComponent = lazy(
+    () => import("./modules/Health/DiseasesSearch/DiseasesSearchComponent")
 );
 
-const HeartRateDetectComponent = lazy(() =>
-    import("./modules/Health/HeartRateDetect/HeartRateDetectComponent")
-)
+const HeartRateDetectComponent = lazy(
+    () => import("./modules/Health/HeartRateDetect/HeartRateDetectComponent")
+);
 
 export default function RouterComponent() {
     return (
@@ -66,8 +74,14 @@ export default function RouterComponent() {
                 {/* Demo Survey */}
                 <Route path="/survey" excat>
                     <SurveyComponent
-                        questions={questions}
+                        questions={burnoutQuestions}
                         dbCollectionName={"demo-survey-0"}
+                    />
+                </Route>
+                <Route path="/survey/burnout-prevention" excat>
+                    <SurveyComponent
+                        questions={burnoutQuestions as SliderQuestion[]}
+                        dbCollectionName={"burnout-survey-0"}
                     />
                 </Route>
 
